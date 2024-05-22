@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="374.0" prefWidth="200.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.trainstation.ControllerTrainVisual">
+   <children>
+      <Text fill="RED" layoutX="27.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Допомога:" wrappingWidth="186.509765625">
+         <font>
+            <Font size="22.0" />
+         </font></Text>
+      <Text fill="#b2b2b2" layoutX="14.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@TrainStationHelp_bot" wrappingWidth="186.509765625">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#00bfff" layoutX="27.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telegram" wrappingWidth="186.509765625">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:///C:/Users/ferb6/OneDrive/Робочий%20стіл/Курсова%20Робота/TrainStation/helpbotqr.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

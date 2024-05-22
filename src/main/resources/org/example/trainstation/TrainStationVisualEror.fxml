@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.trainstation.ControllerTrainVisual">
+   <children>
+      <Text fill="RED" layoutX="7.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Виникла помилка." wrappingWidth="186.509765625">
+         <font>
+            <Font size="22.0" />
+         </font></Text>
+      <Text fill="#b2b2b2" layoutX="7.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Можливі помилки:" wrappingWidth="240.509765625">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="7.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Невірно введені дані" wrappingWidth="186.509765625">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="7.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Не авторизовані" wrappingWidth="264.509765625">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

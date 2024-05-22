@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="349.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.trainstation.ControllerTrainVisual">
+    <children>
+        <Line endX="248.0" layoutX="101.0" layoutY="527.0" startX="-101.0" stroke="#66f254" />
+        <Text fill="#53f86c" fontSmoothingType="LCD" layoutX="21.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Train Station." textAlignment="JUSTIFY" wrappingWidth="147.890625">
+            <font>
+                <Font name="Thames" size="42.0" />
+            </font>
+        </Text>
+        <Text fill="#e1ba1e" layoutX="140.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ua" wrappingWidth="57.20800018310547">
+            <font>
+                <Font name="Thames" size="42.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="237.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Auto" wrappingWidth="91.31999969482422">
+            <font>
+                <Font name="Thames Italic" size="45.0" />
+            </font>
+        </Text>
+        <TextArea fx:id="loginAuto" layoutX="17.0" layoutY="227.0" prefHeight="36.0" prefWidth="266.0" text="Введіть логін" />
+        <TextArea fx:id="passwordAuto" layoutX="21.0" layoutY="287.0" prefHeight="36.0" prefWidth="266.0" text="Введіть пароль" />
+        <Button layoutX="84.0" layoutY="348.0" mnemonicParsing="false" onAction="#loginbutton" prefHeight="56.0" prefWidth="141.0" style="-fx-background-color: 333; -fx-border-color: #66f254;" text="LOGIN" textFill="#66f254" />
+        <Button layoutX="-19.0" layoutY="527.0" mnemonicParsing="false" onAction="#handleTrainFinder" prefHeight="71.0" prefWidth="148.0" style="-fx-background-color: 333; -fx-border-color: #66f254;" text="FIND" textFill="#66f254" />
+        <Button layoutX="129.0" layoutY="527.0" mnemonicParsing="false" onAction="#handleMyTickets" prefHeight="71.0" prefWidth="129.0" style="-fx-background-color: 333; -fx-border-color: #66f254;" text="TICKETS" textFill="#66f254" />
+        <Button layoutX="258.0" layoutY="527.0" mnemonicParsing="false" onAction="#handleAccount" prefHeight="71.0" prefWidth="129.0" style="-fx-background-color: 333; -fx-border-color: #66f254;" text="ACC" textFill="#66f254" />
+        <Button layoutX="175.0" layoutY="453.0" mnemonicParsing="false" onAction="#regbutton" prefHeight="56.0" prefWidth="141.0" style="-fx-background-color: 333; -fx-border-color: #66f254;" text="Немає аккаунту?" textFill="#66f254" />
+    </children>
+</AnchorPane>

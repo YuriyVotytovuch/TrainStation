@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="349.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.trainstation.ControllerTrainVisual">
+    <children>
+        <Line endX="248.0" layoutX="101.0" layoutY="527.0" startX="-101.0" stroke="#66f254" />
+        <Text fill="#53f86c" fontSmoothingType="LCD" layoutX="25.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Train Station." textAlignment="JUSTIFY" wrappingWidth="147.890625">
+            <font>
+                <Font name="Thames" size="32.0" />
+            </font>
+        </Text>
+        <Text fill="#e1ba1e" layoutX="120.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ua" wrappingWidth="30.20800018310547">
+            <font>
+                <Font name="Thames" size="32.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="175.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" wrappingWidth="141.0">
+            <font>
+                <Font name="Thames Italic" size="45.0" />
+            </font>
+        </Text>
+        <TextArea fx:id="from" layoutX="42.0" layoutY="157.0" prefHeight="36.0" prefWidth="266.0" style="-fx-border-color: #66f254;" text="FROM&#10;" />
+        <TextArea fx:id="to" layoutX="42.0" layoutY="209.0" prefHeight="36.0" prefWidth="266.0" style="-fx-border-color: #66f254;" text="TO&#10;" />
+        <Button layoutX="102.0" layoutY="373.0" mnemonicParsing="false" onAction="#addTrain" prefHeight="56.0" prefWidth="141.0" style="-fx-background-color: 333; -fx-border-color: #66f254;" text="ADD TRAIN" textFill="#66f254" />
+        <Button layoutX="-19.0" layoutY="527.0" mnemonicParsing="false" onAction="#handleTrainFinder" prefHeight="71.0" prefWidth="148.0" style="-fx-background-color: 333; -fx-border-color: #66f254;" text="FIND" textFill="#66f254" />
+        <Button layoutX="129.0" layoutY="527.0" mnemonicParsing="false" onAction="#handleMyTickets" prefHeight="71.0" prefWidth="129.0" style="-fx-background-color: 333; -fx-border-color: #66f254;" text="TICKETS" textFill="#66f254" />
+        <Button layoutX="258.0" layoutY="527.0" mnemonicParsing="false" onAction="#handleAccount" prefHeight="71.0" prefWidth="129.0" style="-fx-background-color: 333; -fx-border-color: #66f254;" text="ACC" textFill="#66f254" />
+        <Button fx:id="logOut" layoutX="194.0" layoutY="455.0" mnemonicParsing="false" onAction="#logOutbutton" prefHeight="56.0" prefWidth="141.0" style="-fx-background-color: 333; -fx-border-color: #66f254;" text="Log Out" textFill="#66f254" />
+        <Text fill="WHITE" layoutX="225.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="menu" wrappingWidth="141.0">
+            <font>
+                <Font name="Thames Italic" size="45.0" />
+            </font>
+        </Text>
+        <ComboBox fx:id="timeComboBox" layoutX="43.0" layoutY="301.0" prefHeight="36.0" prefWidth="155.0" promptText="Select Time" style="-fx-background-color: #999; -fx-border-color: #66f254; -fx-background-size: 8px;">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="10:00" />
+                    <String fx:value="12:00" />
+                    <String fx:value="15:00" />
+                    <String fx:value="18:00" />
+                    <String fx:value="20:00" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <DatePicker fx:id="datePicker" layoutX="211.0" layoutY="300.0" prefHeight="38.0" prefWidth="108.0" promptText="Date" style="-fx-background-color: #333; -fx-background-color: #66f254;" />
+      <ComboBox fx:id="priceComboBox" layoutX="43.0" layoutY="259.0" prefHeight="36.0" prefWidth="266.0" promptText="Select Price" style="-fx-background-color: #999; -fx-border-color: #66f254; -fx-background-size: 8px;">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="50" />
+               <String fx:value="100" />
+               <String fx:value="150" />
+               <String fx:value="200" />
+               <String fx:value="300" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+    </children>
+</AnchorPane>
